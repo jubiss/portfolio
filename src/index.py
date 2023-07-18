@@ -38,5 +38,5 @@ def display_page(pathname):
         return '404 Page not found'
 
 if __name__ == '__main__':
-    app.layout = html.Div()
+    app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
     app.run_server(debug=True)
