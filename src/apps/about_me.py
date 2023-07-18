@@ -1,6 +1,7 @@
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 linkedin_icon = '/assets/linkedin_icon.png'
+github_icon = '/assets/github_icon.png'
 layout = html.Div([
             html.H1('Hello! My name is José'),
             html.Hr(),
@@ -31,7 +32,8 @@ layout = html.Div([
                             children=[
                             html.Img(
                                 alt="Link to my Github",
-                                src=linkedin_icon,
+                                src=github_icon,
+                                height=100
                                 )
                                 ]
                             ),

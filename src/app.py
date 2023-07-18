@@ -4,7 +4,6 @@ from dash import html, dcc
 from dash.dependencies import Input, Output
 import dash_custom_components.my_components as c1
 # Connect to main app.py file
-from app import app
 from apps import about_me #page1, page2
 
 # meta_tags are required for the app layout to be mobile responsive
