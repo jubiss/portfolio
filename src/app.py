@@ -16,10 +16,10 @@ server = app.server
 
 # Sidebar links to pages
 link_list = [("About me", "/"),
-             ("Experience", "/experience"),
+             #("Experience", "/experience"),
              ("Portfolio", "/portfolio"),
-             ("Contact", "/contact"),
-             ("Publications", "/publications"),
+             #("Contact", "/contact"),
+             #("Publications", "/publications"),
              ("Resume", "/resume")]
 
 sidebar, CONTENT_STYLE = c1.side_navbar(sidebar_name="José Ferreira", sidebar_description=None, link_list=link_list)
