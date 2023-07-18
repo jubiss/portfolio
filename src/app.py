@@ -19,8 +19,12 @@ link_list = [("About me", "/"),
              #("Experience", "/experience"),
              ("Portfolio", "/portfolio"),
              #("Contact", "/contact"),
-             #("Publications", "/publications"),
-             ("Resume", "/resume")]
+             #("Publications", "/publications")
+             ]
+
+
+
+
 
 sidebar, CONTENT_STYLE = c1.side_navbar(sidebar_name="José Ferreira", sidebar_description=None, link_list=link_list)
 

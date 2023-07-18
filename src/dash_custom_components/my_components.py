@@ -2,7 +2,7 @@ import dash_bootstrap_components as dbc
 from dash import html, dash_table, dcc
 text_font_size = '18px'
 
-def side_navbar(sidebar_name=None, sidebar_description=None, link_list=None):
+def side_navbar(sidebar_name=None, sidebar_description=None, link_list=None, footer_list=None):
     """
     Ref: https://dash-bootstrap-components.opensource.faculty.ai/examples/simple-sidebar/page-2
     """
@@ -33,6 +33,8 @@ def side_navbar(sidebar_name=None, sidebar_description=None, link_list=None):
                 vertical=True,
                 pills=True,
         ),
+        html.Footer(children=footer_list,
+                    style={'bottom': 0})
     ],
     style=SIDEBAR_STYLE,
     )
