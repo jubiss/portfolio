@@ -4,7 +4,7 @@ from dash import html, dcc
 from dash.dependencies import Input, Output
 import dash_custom_components.my_components as c1
 # Connect to main app.py file
-from apps import about_me #page1, page2
+from apps import about_me, portfolio
 
 # meta_tags are required for the app layout to be mobile responsive
 app = dash.Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP],
@@ -45,8 +45,8 @@ def display_page(pathname):
     """
     if pathname == '/':
         return about_me.layout
-    if pathname == '/page2':
-        return # page2.layout
+    if pathname == '/portfolio':
+        return portfolio.layout
     else:
         return '404 Page not found'
 

@@ -91,7 +91,6 @@ contact_links = html.Div([
             )])])
 
 layout = html.Div([
-            dbc.Col([introduction_section,
-                     about_me_section], width=6),
+            dbc.Col([introduction_section, about_me_section], width=6),
             contact_links,
 ])
