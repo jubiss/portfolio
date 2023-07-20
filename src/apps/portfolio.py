@@ -21,7 +21,7 @@ real_estate_scraper = html.Div([
 ])
 
 dash_personal_web = html.Div([
-    html.A(href="http://https://github.com/jubiss/portfolio",
+    html.A(href="https://github.com/jubiss/portfolio",
            children=html.H3("Dash Portfolio"),
            target="_blank"),
     html.P("""This is the repository of this page, done using Dash and deployed with Gunicorn and Render."""),
@@ -53,7 +53,6 @@ data_science_template = html.Div([
     html.P("""
            It's a repository template that I use to make easier to start my projects of Data Science, and follows my personal Workflow.""")
 ])
-
 
 layout = html.Div([
             dbc.Col(

@@ -41,10 +41,12 @@ about_me_section = html.Div([html.H3("About me"),
                                         target='_blank'),
                                 " a ",
                                 html.A(href="https://dhauz.com/en-us/solucoes/pharma/",
-                                        children=" consultancy company "),
+                                        children=" consultancy company ",
+                                        target="_blank"),
                                 " where I worked in one of the 5 biggest pharmaceutical companies in the world, ",
                                 html.A(href="https://bigdata.com.br/en/",
-                                        children="retail start-up "),
+                                        children="retail start-up ",
+                                        target="_blank"),
                                 """ delivering recommendations for more than 500 thousands customers. 
                                 Now I'm focused on creating solutions for small companies, providing bussiness and data 
                                 consultancy."""])])
