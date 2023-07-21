@@ -90,9 +90,14 @@ contact_links = html.Div([
                     ),
                     'gmail'
                     ],
-            )])])
+            )]
+            )],
+            style={'margin-top': '100px',
+                   'justify-content': 'center',
+                   'text-align': 'center'}
+            )
 
 layout = html.Div([
-            dbc.Col([introduction_section, about_me_section], width=6),
+            dbc.Col([introduction_section, about_me_section]),
             contact_links,
 ])

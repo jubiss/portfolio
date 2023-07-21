@@ -15,9 +15,9 @@ app = dash.Dash(__name__, suppress_callback_exceptions=True, external_stylesheet
 server = app.server
 
 # Sidebar links to pages
-link_list = [("About me", "/"),
+link_list = [("01. About me", "/"),
              #("Experience", "/experience"),
-             ("Portfolio", "/portfolio"),
+             ("02. Portfolio", "/portfolio"),
              #("Contact", "/contact"),
              #("Publications", "/publications")
              ]
@@ -26,11 +26,12 @@ link_list = [("About me", "/"),
 
 
 
-sidebar, CONTENT_STYLE = c1.side_navbar(sidebar_name="José Ferreira", sidebar_description=None, link_list=link_list)
+navbar, CONTENT_STYLE = c1.navbar(link_list=link_list, color='#000248')
 
+#CONTENT_STYLE['backgroundColor'] = '#596854'
 content = html.Div(id='page-content', style=CONTENT_STYLE)
 
-app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
+app.layout = html.Div([dcc.Location(id="url"), navbar, content],)
 
 @app.callback(Output('page-content', 'children'), [Input('url', 'pathname')])
 def display_page(pathname):
@@ -51,5 +52,5 @@ def display_page(pathname):
         return '404 Page not found'
 
 if __name__ == '__main__':
-    app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
+    #app.layout = html.Div([dcc.Location(id="url"), navbar, content])
     app.run_server(debug=True)

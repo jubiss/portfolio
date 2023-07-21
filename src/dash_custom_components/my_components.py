@@ -14,7 +14,7 @@ def side_navbar(sidebar_name=None, sidebar_description=None, link_list=None, foo
         "bottom": 0,
         "width": "16rem",
         "padding": "2rem 1rem",
-        "background-color": "#f8f9fa",
+        "background-color": "#596854",
     }
     if link_list==None:
         link_list = [("Home", "/"),
@@ -47,6 +47,58 @@ def side_navbar(sidebar_name=None, sidebar_description=None, link_list=None, foo
     }
 
     return sidebar, CONTENT_STYLE
+
+def navbar(link_list=None, color='white'):
+    """
+    Creates a navigation bar component with logo and navigation links.
+
+    Returns:
+        dbc.Navbar: Navigation bar component.
+    """
+    if link_list==None:
+        link_list = [("Home", "/"),
+                     ("Page 1", "/Page-1"),
+                     ("Page 2", "/Page-2"),]
+    nav_link = []
+    for link in link_list:
+        nav_link.append(dbc.NavLink(link[0], href=link[1], active="exact", style={"color": "#F2C0A2"}))
+
+    navbar = dbc.Navbar(
+        dbc.Container(
+            [
+                dbc.Row(
+                    [
+                        #dbc.Col(html.Img(src=logo_juliana), width=3), #Logo Column
+                        dbc.Col(
+                            dbc.Nav(nav_link,
+                                    navbar=True,
+                                    className="justify-content-end",
+                            ),
+                            style={'align': 'right'},
+                            width=9,
+                        ),
+                    ],
+                    #align="center",
+                    #className="justify-content-between",  # Added justify-content-between class
+                    style={'width': '100%'}
+                ),
+            ],
+        fluid=True),
+        color="#D96C75",
+        className='mb-5',
+    )
+
+    CONTENT_STYLE = {
+        #"margin-left": "18rem",
+        #"margin-right": "18rem",
+        #"padding": "2rem 2rem",
+        "margin": "auto",
+        "width": "50%",
+        "align": "center",
+        "color": "#0083FF"
+    }
+
+    return navbar, CONTENT_STYLE
 
 def input_top_label(id, label, value, text_font_size=text_font_size):
     """
