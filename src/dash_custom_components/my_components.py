@@ -61,7 +61,7 @@ def navbar(link_list=None, color='white'):
                      ("Page 2", "/Page-2"),]
     nav_link = []
     for link in link_list:
-        nav_link.append(dbc.NavLink(link[0], href=link[1], active="exact", style={"color": "#F2C0A2"}))
+        nav_link.append(dbc.NavLink(link[0], href=link[1], active="exact", style={"color": "#E57474"}))
 
     navbar = dbc.Navbar(
         dbc.Container(
@@ -84,7 +84,7 @@ def navbar(link_list=None, color='white'):
                 ),
             ],
         fluid=True),
-        color="#D96C75",
+        color="#4B3D6D",
         className='mb-5',
     )
 
@@ -95,7 +95,7 @@ def navbar(link_list=None, color='white'):
         "margin": "auto",
         "width": "50%",
         "align": "center",
-        "color": "#0083FF"
+        #"color": "#0083FF"
     }
 
     return navbar, CONTENT_STYLE

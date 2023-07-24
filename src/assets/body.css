@@ -1,27 +1,31 @@
 body{
-    background-color: #D96C75;
+    background-color: #4B3D6D;
     }
 
 H1{
-    color: #1c2542;
+    color: #D8D9D0;
 }
 
 H2{
-    color: #1c2542;
+    color: #D8D9D0;
 }
 
 H3{
-    color: #222a40
+    color: #D8D9D0
 }
 
 H5{
-    color: #222a40
+    color: #D8D9D0
 }
 
 P{
-    color: #222a40
+    color: #D8D9D0
 }
 
 A{
-    color: #F2C0A2;
+    color: #E57474;
+}
+
+.card{
+    background-color: #C44A6E;
 }

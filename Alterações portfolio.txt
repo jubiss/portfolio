@@ -1,7 +1,0 @@
-Ok Alterar a navbar para cima
-Ok Aumentar tamanho da barra lateral
-Ok Adicionar blanked para Dhauz e Big Data
-Adião de cards similar ao formato do site da front.
-Utilizar uma paleta de cores.
-Adição de imagéns junto com os projetos
-
