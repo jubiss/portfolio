@@ -9,7 +9,7 @@ introduction = html.Div([
     html.P("Please note that I am still updating my old projects, so you may come across changes from time to time.")])
 
 real_estate_scraper = pc.project_card(
-                        title="Dash Personal Website", 
+                        title="Real Estate Scraper", 
                         description="""
                                     Scraper that interact, collect, and make the initial ETL of Real Estate data from dynamic websites, using the Scrapy-Selenium framework.  
                                     """,

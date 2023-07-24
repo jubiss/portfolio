@@ -25,7 +25,7 @@ introduction_section = html.Div([
                    ]),
             html.P(["Feel free to write any suggestions of improvements, bugs encountered or just to have a small talk.",
                     html.Br(),
-                    "This page is made using Python Dash, deployed using dash-tools and hosted on Render."])
+                    "This page is made using Python Dash, deployed using Gunicorn and hosted on Render."])
                    
             ])
 
