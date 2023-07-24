@@ -51,6 +51,25 @@ about_me_section = html.Div([html.H3("About me"),
                                 Now I'm focused on creating solutions for small companies, providing bussiness and data 
                                 consultancy."""])])
 
+tech_worked = html.Div([html.H3("TechStacks"),
+                        html.P("Some of the technology that I have worked"),
+                        html.H5("Programming Languages"),
+                        html.P("Python, SQL, Bash, Shell, Mathematica, Octave"),
+                        html.H5("Data Science and Machine Learning"),
+                        html.P("Regression, Classification, Time Series, Clusterization, NLP, A/B Tests"),
+                        html.H5("Big Data"),
+                        html.P("PySpark, MLlib"),
+                        html.H5("Data Science Libraries"),
+                        html.P("Pandas, Scikit-Learn, XGBoost, Boruta, TensorFlow"),
+                        html.H5("Data Viz and Data Analysis"),
+                        html.P("Dash, Plotly, Amazon QuickSight, Metabase, PowerBI, Seaborn, Matplotlib"),
+                        html.H5("Software Engineering"),
+                        html.P("Agile Methodologies (Scrum and Kanban), OOP(Object Oriented Programming), Version Control(Git, GitHub, GitLab), CI/CD"),
+                        html.H5("Cloud"),
+                        html.P("AWS, DataBricks"),
+                        html.Br()
+                        ])
+
 contact_links = html.Div([
                 html.P([
                 html.A(
@@ -99,5 +118,6 @@ contact_links = html.Div([
 
 layout = html.Div([
             dbc.Col([introduction_section, about_me_section]),
+            tech_worked,
             contact_links,
 ])
